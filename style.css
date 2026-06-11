@@ -273,5 +273,20 @@ align-items:center;
 width:220px;
 text-align:center;
 }
+.contact-btn{
+display:inline-block;
+padding:16px 28px;
+background:#4b3628;
+color:white !important;
+text-decoration:none;
+border-radius:999px;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
 
+.contact-btn:hover{
+transform:translateY(-3px);
+opacity:.9;
+}
 }
