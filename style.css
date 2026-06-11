@@ -1,237 +1,673 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html{
-scroll-behavior:smooth;
-}
+<title>Sautee Trail Cafe</title>
 
-body{
-font-family:'Inter',sans-serif;
-background:#f8f5ef;
-color:#222;
-overflow-x:hidden;
-line-height:1.7;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.navbar{
-position:fixed;
-top:20px;
-left:50%;
-transform:translateX(-50%);
-width:92%;
-max-width:1300px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 30px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.15);
-border-radius:999px;
-z-index:1000;
-}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-.logo{
-font-family:'Playfair Display',serif;
-font-size:1.3rem;
-font-weight:700;
-color:white;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-.nav-links{
-display:flex;
-gap:35px;
-}
+<body>
 
-.nav-links a{
-text-decoration:none;
-color:white;
-font-weight:500;
-transition:.3s;
-}
+<nav class="navbar">
 
-.nav-links a:hover{
-opacity:.7;
-}
+<div class="logo">
+Sautee Trail Cafe
+</div>
 
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("hero.png");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#hours">Hours</a>
+<a href="#contact">Contact</a>
+</div>
 
-.hero-content{
-color:white;
-padding:20px;
-max-width:900px;
-}
+</nav>
 
-.eyebrow{
-letter-spacing:5px;
-font-size:.85rem;
-margin-bottom:20px;
-}
+<header class="hero">
 
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:6rem;
-line-height:1;
-margin-bottom:20px;
-}
+<div class="hero-content">
 
-.subtitle{
-font-size:1.3rem;
-margin-bottom:35px;
-font-weight:300;
-}
+<p class="eyebrow">
+CLARKESVILLE, GEORGIA
+</p>
 
-.button{
-display:inline-block;
-padding:16px 38px;
-background:white;
-color:#111;
-text-decoration:none;
-font-weight:600;
-border-radius:999px;
-transition:.3s;
-}
+<h1>
+Sautee Trail Cafe
+</h1>
 
-.button:hover{
-transform:translateY(-4px);
-}
+<p class="subtitle">
+Breakfast • Lunch • Dinner
+</p>
 
-section{
-padding:120px 8%;
-}
+<div class="hero-buttons">
 
-.container{
-max-width:1200px;
-margin:auto;
-}
+<a href="#menu" class="button">
+View Menu
+</a>
 
-h2{
-font-family:'Playfair Display',serif;
-font-size:3rem;
-margin-bottom:30px;
-text-align:center;
-color:#2f241d;
-}
+<a href="#contact" class="button secondary-button">
+Contact Us
+</a>
 
-.container > p{
-max-width:800px;
-margin:auto;
-text-align:center;
-font-size:1.1rem;
-}
+</div>
 
-.menu-category{
-background:white;
-padding:40px;
-border-radius:24px;
-margin-bottom:35px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
+</div>
 
-.menu-category h3{
-font-family:'Playfair Display',serif;
-font-size:2rem;
-margin-bottom:25px;
-color:#4b3628;
-}
+</header>
 
-.menu-item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:14px 0;
-border-bottom:1px solid #ececec;
-}
+<section id="about">
 
-.menu-item:last-child{
-border-bottom:none;
-}
+<div class="container">
 
-.menu-item span:first-child{
-font-weight:600;
-}
+<h2>Welcome</h2>
 
-.menu-item span:last-child{
-font-weight:700;
-color:#4b3628;
-}
+<p>
+Located in the North Georgia mountains, Sautee Trail Cafe is known for homemade breakfasts, Southern comfort food, friendly service, and a welcoming atmosphere.
+</p>
 
-.menu-category p{
-margin:8px 0 16px;
-color:#666;
-font-size:.95rem;
-line-height:1.6;
-}
+</div>
 
-.hours-box{
-background:white;
-padding:40px;
-border-radius:24px;
-max-width:500px;
-margin:auto;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-text-align:center;
-}
+</section>
 
-.hours-box p{
-margin:8px 0;
-}
+<section id="menu">
 
-#contact p{
-text-align:center;
-margin-bottom:12px;
-}
+<div class="container">
 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:50px 20px;
-}
+<h2>Full Menu</h2>
 
-@media(max-width:768px){
+<div class="menu-category">
 
-.nav-links{
-display:none;
-}
+<h3>Breakfast</h3>
 
-.hero h1{
-font-size:3.5rem;
-}
+<div class="menu-item">
+<span>Two Eggs</span>
+<span>$8.95</span>
+</div>
 
-.subtitle{
-font-size:1rem;
-}
+<p>
+Two eggs served with your choice of grits or gravy, bacon, sausage patties or hot links, plus a biscuit or toast.
+</p>
 
-h2{
-font-size:2.2rem;
-}
+<div class="menu-item">
+<span>Three Eggs</span>
+<span>$10.95</span>
+</div>
 
-section{
-padding:90px 7%;
-}
+<p>
+Three eggs served with country ham, hashbrowns, and a biscuit or toast.
+</p>
 
-.menu-item{
-font-size:.95rem;
-gap:10px;
-}
+<div class="menu-item">
+<span>Eggs Benedict</span>
+<span>$12.25</span>
+</div>
 
-.menu-category{
-padding:25px;
-}
+<p>
+Buttermilk biscuit topped with sausage patties, gravy, and two eggs. Served with corned beef hash.
+</p>
 
-}
+<div class="menu-item">
+<span>Philly Omelet</span>
+<span>$12.25</span>
+</div>
+
+<p>
+Three-egg omelet with philly steak, cheese, and onions. Served with grits and biscuit or toast.
+</p>
+
+<div class="menu-item">
+<span>Western Omelet</span>
+<span>$11.25</span>
+</div>
+
+<p>
+Three-egg omelet with ham, cheese, peppers, onions, and tomatoes. Served with grits and biscuit or toast.
+</p>
+
+<div class="menu-item">
+<span>Ham & Cheese Omelet</span>
+<span>$10.25</span>
+</div>
+
+<p>
+Three-egg omelet stuffed with diced ham and cheese. Served with grits and biscuit or toast.
+</p>
+<div class="menu-item">
+<span>Biscuit & Gravy</span>
+<span>$5.75</span>
+</div>
+
+<p>
+Homemade biscuit smothered in sausage gravy.
+</p>
+
+<div class="menu-item">
+<span>Add Bacon, Sausage or Hotlinks</span>
+<span>$7.95</span>
+</div>
+
+<div class="menu-item">
+<span>Add Country Ham, Tenderloin, Fried Chicken or Steak</span>
+<span>$8.95</span>
+</div>
+
+<div class="menu-item">
+<span>Sampler</span>
+<span>$13.95</span>
+</div>
+
+<p>
+Two eggs, two silver dollar pancakes, ham, bacon, sausage, grits, and biscuit.
+</p>
+
+<div class="menu-item">
+<span>Pancakes</span>
+<span>$8.95</span>
+</div>
+
+<p>
+Two fluffy pancakes served with bacon or sausage.
+</p>
+
+<div class="menu-item">
+<span>Add Chocolate Chips, Pecans or Blueberries</span>
+<span>$0.75</span>
+</div>
+
+<div class="menu-item">
+<span>French Toast</span>
+<span>$7.95</span>
+</div>
+
+<p>
+Texas toast dipped in batter and grilled. Served with bacon or sausage.
+</p>
+
+<div class="menu-item">
+<span>Add Mushrooms or Jalapeños to Omelets</span>
+<span>$0.75</span>
+</div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Breakfast Sides</h3>
+
+<div class="menu-item">
+<span>Hashbrowns</span>
+<span>$3.95</span>
+</div>
+
+<div class="menu-item">
+<span>Home Fries</span>
+<span>$3.75</span>
+</div>
+
+<div class="menu-item">
+<span>Grits</span>
+<span>$2.00</span>
+</div>
+
+<div class="menu-item">
+<span>Cheese Grits</span>
+<span>$2.75</span>
+</div>
+
+<div class="menu-item">
+<span>Corned Beef Hash</span>
+<span>$5.75</span>
+</div>
+
+<div class="menu-item">
+<span>Silver Dollar Pancakes</span>
+<span>$3.50</span>
+</div>
+
+<div class="menu-item">
+<span>Gravy</span>
+<span>$3.25</span>
+</div>
+
+<div class="menu-item">
+<span>Rye Toast</span>
+<span>$1.75</span>
+</div>
+
+<div class="menu-item">
+<span>White or Wheat Toast</span>
+<span>$1.50</span>
+</div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Homemade Buttermilk Biscuits</h3>
+
+<div class="menu-item">
+<span>Biscuit</span>
+<span>$2.25</span>
+</div>
+
+<div class="menu-item">
+<span>Cheese Biscuit</span>
+<span>$2.75</span>
+</div>
+
+<div class="menu-item">
+<span>Bacon, Sausage or Hotlink Biscuit</span>
+<span>$4.55</span>
+</div>
+
+<div class="menu-item">
+<span>Chicken or Country Ham Biscuit</span>
+<span>$4.95</span>
+</div>
+
+<div class="menu-item">
+<span>Steak or Tenderloin Biscuit</span>
+<span>$4.95</span>
+</div>
+
+<div class="menu-item">
+<span>Add Egg & Cheese</span>
+<span>$1.50</span>
+</div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Appetizers</h3>
+
+<div class="menu-item">
+<span>Todd's Taters</span>
+<span>$9.95</span>
+</div>
+
+<p>
+Home fries loaded with beef, onions, tomatoes, peppers, cheese, and hot sauce.
+</p>
+
+<div class="menu-item">
+<span>Cheese Fries</span>
+<span>$7.95</span>
+</div>
+
+<p>
+Fries covered in melted cheese and bacon.
+</p>
+<div class="menu-item">
+<span>Add Chili</span>
+<span>$1.00</span>
+</div>
+
+<div class="menu-item">
+<span>Mozzarella Sticks</span>
+<span>$8.95</span>
+</div>
+
+<p>
+Served with marinara sauce.
+</p>
+
+<div class="menu-item">
+<span>Hot or Barbecue Wings</span>
+<span>$9.95</span>
+</div>
+
+<p>
+Served with ranch or bleu cheese.
+</p>
+
+<div class="menu-item">
+<span>Golden Fried Pickles</span>
+<span>$8.15</span>
+</div>
+
+<p>
+Served with ranch dressing.
+</p>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Burgers & Sandwiches</h3>
+
+<div class="menu-item">
+<span>Old Fashioned Burger</span>
+<span>$8.85</span>
+</div>
+
+<p>
+Fresh ground beef with lettuce, tomato, onion, ketchup, mustard, and mayo.
+</p>
+
+<div class="menu-item">
+<span>Mountain Burger</span>
+<span>$8.95</span>
+</div>
+
+<p>
+½ lb Black Angus burger with lettuce, tomato, onion, ketchup, mustard, and mayo.
+</p>
+
+<div class="menu-item">
+<span>Bacon Cheddar Burger</span>
+<span>$9.25</span>
+</div>
+
+<p>
+Black Angus burger topped with bacon and cheddar cheese.
+</p>
+
+<div class="menu-item">
+<span>Mushroom Swiss Burger</span>
+<span>$9.25</span>
+</div>
+
+<p>
+Black Angus burger topped with mushrooms and Swiss cheese.
+</p>
+
+<div class="menu-item">
+<span>Add Slaw or Cheese</span>
+<span>$0.75</span>
+</div>
+
+<div class="menu-item">
+<span>Shrimp Po Boy</span>
+<span>$12.95</span>
+</div>
+
+<p>
+Fried shrimp with sweet and spicy po-boy sauce, cheese, and lettuce.
+</p>
+
+<div class="menu-item">
+<span>Fried or Grilled Chicken Sandwich</span>
+<span>$7.95</span>
+</div>
+
+<p>
+Chicken breast with lettuce, tomato, and mayo.
+</p>
+
+<div class="menu-item">
+<span>Chicken Bacon Swiss</span>
+<span>$8.95</span>
+</div>
+
+<p>
+Grilled chicken breast topped with bacon and Swiss cheese.
+</p>
+
+<div class="menu-item">
+<span>Reuben</span>
+<span>$8.95</span>
+</div>
+
+<p>
+Corned beef, sauerkraut, cheese, and Thousand Island on grilled rye.
+</p>
+
+<div class="menu-item">
+<span>Slammer</span>
+<span>$7.95</span>
+</div>
+
+<p>
+Ham, grilled onions, cheese, and mayo on Texas toast.
+</p>
+
+<div class="menu-item">
+<span>Philly Cheese Steak</span>
+<span>$9.95</span>
+</div>
+
+<p>
+Steak, onions, peppers, and white American cheese on a hoagie roll.
+</p>
+
+<div class="menu-item">
+<span>Add Mushrooms or Jalapeños</span>
+<span>$0.75</span>
+</div>
+
+<div class="menu-item">
+<span>French Dip</span>
+<span>$8.95</span>
+</div>
+
+<p>
+Thin sliced beef with melted cheese and au jus.
+</p>
+<div class="menu-item">
+<span>BBQ Pork</span>
+<span>$7.25</span>
+</div>
+
+<p>
+Pulled pork with sweet or spicy BBQ sauce.
+</p>
+
+<div class="menu-item">
+<span>Hot Dog</span>
+<span>$3.75</span>
+</div>
+
+<div class="menu-item">
+<span>Add Chili, Slaw or Cheese</span>
+<span>$0.75</span>
+</div>
+
+<div class="menu-item">
+<span>Dirty Dog</span>
+<span>$5.50</span>
+</div>
+
+<p>
+Hot dog loaded with chili, cheese, slaw, onions, ketchup, and mustard.
+</p>
+
+<div class="menu-item">
+<span>Club Sandwich</span>
+<span>$9.50</span>
+</div>
+
+<p>
+Ham, turkey, bacon, cheese, lettuce, tomato, and mayo.
+</p>
+
+<div class="menu-item">
+<span>Chicken Salad Sandwich</span>
+<span>$6.50</span>
+</div>
+
+<p>
+Chicken salad with lettuce, tomato, and mayo.
+</p>
+
+<div class="menu-item">
+<span>BLT</span>
+<span>$6.75</span>
+</div>
+
+<p>
+Bacon, lettuce, tomato, and mayo on Texas toast.
+</p>
+
+<div class="menu-item">
+<span>Fried Bologna</span>
+<span>$4.95</span>
+</div>
+
+<p>
+Fried bologna with lettuce, tomato, and mayo.
+</p>
+
+<div class="menu-item">
+<span>Add Rye Bread</span>
+<span>$1.00</span>
+</div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Lunch Sides</h3>
+
+<div class="menu-item"><span>French Fries</span><span>$3.25</span></div>
+<div class="menu-item"><span>Tater Tots</span><span>$3.75</span></div>
+<div class="menu-item"><span>Sweet Potato Fries</span><span>$3.95</span></div>
+<div class="menu-item"><span>Onion Rings</span><span>$3.95</span></div>
+<div class="menu-item"><span>Chips</span><span>$0.75</span></div>
+<div class="menu-item"><span>Slaw</span><span>$1.50</span></div>
+<div class="menu-item"><span>Baked Potato</span><span>$3.50</span></div>
+<div class="menu-item"><span>Loaded Baked Potato</span><span>$5.75</span></div>
+<div class="menu-item"><span>Brunswick Stew (Seasonal)</span><span>$4.95 Cup</span></div>
+<div class="menu-item"><span>Add Nacho Cheese or Chili to Fries/Tots</span><span>$1.50</span></div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Salads</h3>
+
+<div class="menu-item"><span>Garden Salad</span><span>$5.95</span></div>
+
+<div class="menu-item"><span>Large Garden Salad</span><span>$8.50</span></div>
+
+<div class="menu-item"><span>Chef Salad</span><span>$12.50</span></div>
+
+<div class="menu-item"><span>Add Chicken Salad</span><span>$3.95</span></div>
+
+<div class="menu-item"><span>Add Fried Chicken</span><span>$3.95</span></div>
+
+<div class="menu-item"><span>Add Grilled Chicken</span><span>$3.95</span></div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Dinners</h3>
+
+<div class="menu-item"><span>BBQ Plate</span><span>$12.95</span></div>
+
+<div class="menu-item"><span>Hamburger Steak</span><span>$13.95</span></div>
+
+<div class="menu-item"><span>Add Grilled Peppers, Mushrooms or Onions</span><span>$0.95</span></div>
+
+<div class="menu-item"><span>Add Gravy</span><span>$1.50</span></div>
+
+<div class="menu-item"><span>Chicken Strips</span><span>$13.95</span></div>
+
+<div class="menu-item"><span>Fried Shrimp</span><span>$17.95</span></div>
+
+</div>
+<div class="menu-category">
+
+<h3>Kid's Menu</h3>
+
+<div class="menu-item"><span>Chicken Fingers</span><span>$7.95</span></div>
+
+<div class="menu-item"><span>Corn Dog</span><span>$4.95</span></div>
+
+<div class="menu-item"><span>Kid's Burger</span><span>$6.95</span></div>
+
+<div class="menu-item"><span>Hot Dog</span><span>$4.50</span></div>
+
+<div class="menu-item"><span>Grilled Cheese</span><span>$3.95</span></div>
+
+<div class="menu-item"><span>PBJ</span><span>$3.25</span></div>
+
+</div>
+
+<div class="menu-category">
+
+<h3>Drinks</h3>
+
+<div class="menu-item"><span>Coke</span><span>$3.00</span></div>
+<div class="menu-item"><span>Diet Coke</span><span>$3.00</span></div>
+<div class="menu-item"><span>Sprite</span><span>$3.00</span></div>
+<div class="menu-item"><span>Lemonade</span><span>$3.00</span></div>
+<div class="menu-item"><span>Mr. Pibb</span><span>$3.00</span></div>
+<div class="menu-item"><span>Root Beer</span><span>$3.00</span></div>
+<div class="menu-item"><span>Sweet Tea</span><span>$3.00</span></div>
+<div class="menu-item"><span>Unsweet Tea</span><span>$3.00</span></div>
+<div class="menu-item"><span>Orange Juice</span><span>$4.00</span></div>
+<div class="menu-item"><span>White Milk</span><span>$4.00</span></div>
+<div class="menu-item"><span>Chocolate Milk</span><span>$4.00</span></div>
+<div class="menu-item"><span>Hot Chocolate</span><span>$1.95</span></div>
+<div class="menu-item"><span>Coffee or Hot Tea</span><span>$1.75</span></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="hours">
+
+<div class="container">
+
+<h2>Hours</h2>
+
+<div class="hours-box">
+
+<p>Tuesday – Saturday</p>
+<p>7:00 AM – 8:00 PM</p>
+
+<p>Sunday</p>
+<p>8:00 AM – 3:00 PM</p>
+
+<p>Monday</p>
+<p>Closed</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Visit Us</h2>
+
+<p>
+<a href="https://maps.google.com/?q=3933+Highway+17+Clarkesville+GA+30523" target="_blank">
+3933 Highway 17<br>
+Clarkesville, GA 30523
+</a>
+</p>
+
+<p>
+<a href="tel:+17067548041">
+(706) 754-8041
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sautee Trail Cafe</p>
+
+</footer>
+
+</body>
+</html>
