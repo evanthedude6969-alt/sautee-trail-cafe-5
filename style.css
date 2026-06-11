@@ -16,8 +16,6 @@ overflow-x:hidden;
 line-height:1.7;
 }
 
-/* NAVBAR */
-
 .navbar{
 position:fixed;
 top:20px;
@@ -25,20 +23,14 @@ left:50%;
 transform:translateX(-50%);
 width:92%;
 max-width:1300px;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:18px 30px;
-
 background:rgba(255,255,255,.12);
 backdrop-filter:blur(20px);
-
 border:1px solid rgba(255,255,255,.15);
-
 border-radius:999px;
-
 z-index:1000;
 }
 
@@ -65,22 +57,16 @@ transition:.3s;
 opacity:.7;
 }
 
-/* HERO */
-
 .hero{
 height:100vh;
-
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
 url("hero.png");
-
 background-size:cover;
 background-position:center;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 text-align:center;
 }
 
@@ -111,25 +97,18 @@ font-weight:300;
 
 .button{
 display:inline-block;
-
 padding:16px 38px;
-
 background:white;
 color:#111;
-
 text-decoration:none;
 font-weight:600;
-
 border-radius:999px;
-
 transition:.3s;
 }
 
 .button:hover{
 transform:translateY(-4px);
 }
-
-/* SECTIONS */
 
 section{
 padding:120px 8%;
@@ -155,19 +134,12 @@ text-align:center;
 font-size:1.1rem;
 }
 
-/* MENU */
-
 .menu-category{
 background:white;
-
 padding:40px;
-
 border-radius:24px;
-
 margin-bottom:35px;
-
-box-shadow:
-0 15px 40px rgba(0,0,0,.08);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
 .menu-category h3{
@@ -181,9 +153,7 @@ color:#4b3628;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:14px 0;
-
 border-bottom:1px solid #ececec;
 }
 
@@ -192,7 +162,7 @@ border-bottom:none;
 }
 
 .menu-item span:first-child{
-font-weight:500;
+font-weight:600;
 }
 
 .menu-item span:last-child{
@@ -200,22 +170,20 @@ font-weight:700;
 color:#4b3628;
 }
 
-/* HOURS */
+.menu-category p{
+margin:8px 0 16px;
+color:#666;
+font-size:.95rem;
+line-height:1.6;
+}
 
 .hours-box{
 background:white;
-
 padding:40px;
-
 border-radius:24px;
-
 max-width:500px;
-
 margin:auto;
-
-box-shadow:
-0 15px 40px rgba(0,0,0,.08);
-
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 text-align:center;
 }
 
@@ -223,14 +191,10 @@ text-align:center;
 margin:8px 0;
 }
 
-/* CONTACT */
-
 #contact p{
 text-align:center;
 margin-bottom:12px;
 }
-
-/* FOOTER */
 
 footer{
 background:#111;
@@ -238,8 +202,6 @@ color:white;
 text-align:center;
 padding:50px 20px;
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
@@ -266,6 +228,10 @@ padding:90px 7%;
 .menu-item{
 font-size:.95rem;
 gap:10px;
+}
+
+.menu-category{
+padding:25px;
 }
 
 }
